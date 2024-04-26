@@ -1,10 +1,12 @@
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { Fontisto } from "@expo/vector-icons";
+import { Link } from "@react-navigation/native";
 import React from "react";
+import { Medicine } from "../../Screens/Medicine";
 
-export default function HomeFeature() {
+export default function HomeFeature({ navigation }) {
   return (
     <>
       <TextInput style={Styles.search} placeholder="Find your clinic..." type="text"></TextInput>
@@ -26,7 +28,7 @@ export default function HomeFeature() {
           <View style={Styles.featureLogo}>
             <Fontisto name="drug-pack" size={24} color="white" />
           </View>
-          <Text>Medicine</Text>
+          <Link to="/medicine">Medicine</Link>
         </View>
 
         <View style={{ flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
