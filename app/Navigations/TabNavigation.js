@@ -2,8 +2,8 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../Screens/Home.js";
 import Profile from "../Screens/Profile";
-import Search from "../Screens/Search.js";
 import { Ionicons } from "@expo/vector-icons";
+import SearchClinic from "../Screens/SearchClinic.js";
 
 export default function TabNavigation() {
   const Tab = createBottomTabNavigator();
@@ -22,8 +22,8 @@ export default function TabNavigation() {
         }}
       />
       <Tab.Screen
-        name="Search"
-        component={Search}
+        name="Search Clinic"
+        component={SearchClinic}
         options={{
           tabBarLabel: "Search",
           tabBarIcon: ({ color, size }) => <Ionicons name="search" size={size} color={color} />,

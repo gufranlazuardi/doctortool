@@ -9,7 +9,7 @@ import { Medicine } from "../../Screens/Medicine";
 export default function HomeFeature({ navigation }) {
   return (
     <>
-      <TextInput style={Styles.search} placeholder="Find your clinic..." type="text"></TextInput>
+      <TextInput style={Styles.search} placeholder="Find your clinic..." type="text" />
 
       <View style={{ flexDirection: "row", justifyContent: "space-between", marginTop: 30 }}>
         <View style={{ flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 10 }}>
